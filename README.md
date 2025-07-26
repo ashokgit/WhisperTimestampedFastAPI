@@ -1,5 +1,6 @@
 # Whisper Timestamped FastAPI
 
+[![Repository](https://img.shields.io/badge/GitHub-ashokgit%2FWhisperTimestampedFastAPI-blue?logo=github)](https://github.com/ashokgit/WhisperTimestampedFastAPI)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://www.docker.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
@@ -29,7 +30,7 @@ A production-ready, cross-platform Docker microservice for speech-to-text transc
 ### 1. Clone and Setup
 
 ```bash
-git clone https://github.com/yourusername/WhisperTimestampedFastAPI.git
+git clone https://github.com/ashokgit/WhisperTimestampedFastAPI.git
 cd WhisperTimestampedFastAPI
 ```
 
@@ -317,7 +318,7 @@ We welcome contributions! Please feel free to submit a Pull Request. For major c
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project uses [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped), which is based on OpenAI Whisper. Please refer to their respective licenses for usage terms.
+This project uses whisper-timestamped, which is based on OpenAI Whisper. Please refer to their respective licenses for usage terms.
 
 ## 🙏 Acknowledgments
 
@@ -340,7 +341,7 @@ A huge thank you to the [linto-ai team](https://github.com/linto-ai) for creatin
 If you encounter any issues or have questions, please:
 
 1. Check the [troubleshooting section](#troubleshooting)
-2. Search existing [issues](https://github.com/yourusername/WhisperTimestampedFastAPI/issues)
+2. Search existing [issues](https://github.com/ashokgit/WhisperTimestampedFastAPI/issues)
 3. Create a new issue with detailed information about your problem
 
 ---

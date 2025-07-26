@@ -8,7 +8,7 @@ Thank you for your interest in contributing to WhisperTimestampedFastAPI! This d
 
 Before creating an issue, please:
 
-1. **Search existing issues** to see if your problem has already been reported
+1. **Search existing issues** to see if your problem has already been reported: https://github.com/ashokgit/WhisperTimestampedFastAPI/issues
 2. **Check the troubleshooting section** in the README
 3. **Provide detailed information** including:
    - Your operating system and version
@@ -21,7 +21,7 @@ Before creating an issue, please:
 
 We welcome feature suggestions! Please:
 
-1. **Search existing issues** to see if the feature has been requested
+1. **Search existing issues** to see if the feature has been requested: https://github.com/ashokgit/WhisperTimestampedFastAPI/issues
 2. **Provide a clear description** of the feature and its benefits
 3. **Include use cases** where the feature would be helpful
 
@@ -29,10 +29,10 @@ We welcome feature suggestions! Please:
 
 #### Development Setup
 
-1. **Fork the repository**
+1. **Fork the repository**: https://github.com/ashokgit/WhisperTimestampedFastAPI
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/yourusername/WhisperTimestampedFastAPI.git
+   git clone https://github.com/ashokgit/WhisperTimestampedFastAPI.git
    cd WhisperTimestampedFastAPI
    ```
 
@@ -62,7 +62,7 @@ We welcome feature suggestions! Please:
    git push origin feature/your-feature-name
    ```
 
-8. **Create a Pull Request** with a clear description of your changes
+8. **Create a Pull Request** at https://github.com/ashokgit/WhisperTimestampedFastAPI/pulls with a clear description of your changes
 
 #### Code Style Guidelines
 
@@ -210,7 +210,7 @@ We're particularly interested in contributions in these areas:
 If you need help with contributing:
 
 1. **Check the README** for setup instructions
-2. **Search existing issues** for similar problems
+2. **Search existing issues** for similar problems: https://github.com/ashokgit/WhisperTimestampedFastAPI/issues
 3. **Create a new issue** with detailed information
 4. **Join discussions** in existing issues
 
