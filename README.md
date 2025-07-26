@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A production-ready, cross-platform Docker microservice for speech-to-text transcription with precise timestamps using [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped). Perfect for building AI-powered applications that need accurate speech recognition with word-level timing information.
+A production-ready, cross-platform Docker microservice for speech-to-text transcription with precise timestamps, powered by [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped). This project wraps the excellent whisper-timestamped library in a FastAPI service, making it easy to deploy and integrate into your applications. Perfect for building AI-powered applications that need accurate speech recognition with word-level timing information.
 
 ## ✨ Features
 
@@ -17,6 +17,7 @@ A production-ready, cross-platform Docker microservice for speech-to-text transc
 - **🔧 Production Ready**: RESTful API with FastAPI, health checks, and monitoring
 - **🐳 Containerized**: Docker and Docker Compose ready for easy deployment
 - **📈 Scalable**: Support for both CPU and GPU services
+- **🔗 Powered by whisper-timestamped**: Built on the excellent [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) library for precise timestamping
 
 ## 🚀 Quick Start
 
@@ -320,10 +321,19 @@ This project uses [whisper-timestamped](https://github.com/linto-ai/whisper-time
 
 ## 🙏 Acknowledgments
 
-- [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) for the core transcription functionality
-- [OpenAI Whisper](https://github.com/openai/whisper) for the base model
-- [FastAPI](https://fastapi.tiangolo.com/) for the web framework
-- [Docker](https://www.docker.com/) for containerization
+This project is built on top of several amazing open source projects:
+
+### 🎯 Core Dependencies
+- **[whisper-timestamped](https://github.com/linto-ai/whisper-timestamped)** - The core transcription engine that provides precise word-level timestamps. This project extends OpenAI Whisper with advanced timestamping capabilities.
+- **[OpenAI Whisper](https://github.com/openai/whisper)** - The foundational speech recognition model that powers the transcription.
+
+### 🛠️ Framework & Tools
+- **[FastAPI](https://fastapi.tiangolo.com/)** - Modern, fast web framework for building APIs
+- **[Docker](https://www.docker.com/)** - Containerization platform for easy deployment
+- **[PyTorch](https://pytorch.org/)** - Deep learning framework for model inference
+
+### 📚 Special Thanks
+A huge thank you to the [linto-ai team](https://github.com/linto-ai) for creating and maintaining whisper-timestamped, which makes precise speech-to-text transcription with timestamps possible. This project would not exist without their excellent work!
 
 ## 📞 Support
 

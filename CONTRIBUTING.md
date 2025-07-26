@@ -193,6 +193,8 @@ When adding new features:
 
 We're particularly interested in contributions in these areas:
 
+**Note**: This project is a wrapper around [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped). For core transcription improvements, please consider contributing to the upstream whisper-timestamped project. This project focuses on the API layer, deployment, and integration features.
+
 - **Performance improvements**: Optimize model loading and inference
 - **Additional audio formats**: Support for more audio formats
 - **Better error handling**: More descriptive error messages
