@@ -54,9 +54,15 @@ logs:
 .PHONY: test
 test:
 	@echo "Testing CPU service health..."
-	@curl -s http://localhost:$(CPU_PORT)/health | python -m json.tool || echo "CPU service not available"
+	@curl -s http://localhost:$(CPU_PORT)/health | python3 -m json.tool || echo "CPU service not available"
 	@echo "\nTesting GPU service health (if running)..."
-	@curl -s http://localhost:$(GPU_PORT)/health | python -m json.tool || echo "GPU service not available"
+	@curl -s http://localhost:$(GPU_PORT)/health | python3 -m json.tool || echo "GPU service not available"
+
+# Run basic tests (no models required)
+.PHONY: test-basic
+test-basic:
+	@echo "Running basic tests..."
+	@python3 test_basic.py
 
 # Check health
 .PHONY: health
