@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+    
+    - name: Build Docker image
+      run: docker build -t whisper-timestamped .
+    
+    - name: Run service and test
+      run: |
+        # Start the service
+        docker-compose up -d whisper-cpu
+        
+        # Wait for service to be ready
+        sleep 30
+        
+        # Test health endpoint
+        curl -f http://localhost:8000/health || exit 1
+        
+        # Test models endpoint
+        curl -f http://localhost:8000/models || exit 1
+        
+        # Create test audio file
+        docker exec whispertimestampedfastapi-whisper-cpu-1 ffmpeg -f lavfi -i "sine=frequency=1000:duration=1" -ar 16000 /app/test.wav
+        
+        # Copy test file to host
+        docker cp whispertimestampedfastapi-whisper-cpu-1:/app/test.wav ./test.wav
+        
+        # Test transcription endpoint
+        curl -X POST "http://localhost:8000/transcribe" \
+          -F "file=@test.wav" \
+          -F "model=tiny" | grep -q "text" || exit 1
+        
+        echo "All tests passed!"
+    
+    - name: Cleanup
+      if: always()
+      run: |
+        docker-compose down
+        docker system prune -f 
